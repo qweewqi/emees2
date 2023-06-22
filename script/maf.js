@@ -1,6 +1,6 @@
 var m1 = '<canvas id="myCanvas" style="position:absolute;z-index:2;left:0;top:190px;" resize="true" width="100" height="100"></canvas><div id="output" style="color:rgb(255, 255, 255);z-index:1; position:absolute;left:0;top:0px;font-size:10px;display:none;"></div><div id="lmp" class="center imgxd preventSelect" style="position: absolute; z-index: 3;"> <img src="img/lamp_xd.png" alt="lamp XD"></div><div id="wor" class="what preventSelect" style="position: absolute; z-index: 3;"> <img src="img/whatt1.png" alt="whatt XD"></div>';
 var colors = ["#3B0900", "#3B2700", "#323B00", "#143B00", "#330124", "#290133", "#011B33", "#323232", "#3B1F1F", "#242424"];
-
+var mgg = ["U caN'T", "DEFEAT ME IF u CAN :]", "tRY hARder :)", "hehE aLmosT DID it", "___LOL___"]
 var pl = false;
 
 function sta (){
@@ -35,6 +35,7 @@ function lo(){
     
         animateMove(this, "left", left).play();
         animateMove(this, "top", top).play();
+        document.title = mgg[Math.floor(Math.random() * mgg.length)];
       });
     });
     
