@@ -44,6 +44,7 @@ const d4 = document.getElementById("lmp");
 var aud = document.createElement("audio");
 aud.src = "./music/dream.mp3";
 aud.autoplay = true;
+aud.loop = true
 document.body.appendChild(aud)
 aud.play();
 
