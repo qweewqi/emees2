@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+
+<title>DEFEAT ME IF u CAN :)</title>
+
+<script src="./script/libs.min.js"></script>
+<script src="./script/Util.js"></script>
+<script src="./script/Assets.js"></script>
+<script src="./script/Config.js"></script>
+<script src="./script/Door.js"></script>
+<script src="./script/Piece.js"></script>
+<!-- <script src="./script/main.js"></script> -->
+<script src="./script/anime.js"></script>
+<script src="./script/maf.js"></script>
+
+
+<style>
+body { margin:0; overflow:hidden; background-color: rgb(49, 35, 35); }
+@font-face {
+  font-family: 'Barkentina';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url('style/Barkentina.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SomethingStrange';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url('style/SomethingStrange.ttf') format('truetype');
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+.preventSelect{
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+        -khtml-user-elect: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera */
+	pointer-events: none;
+}
+
+.imgxd{
+	transform: translate(-50%, -50%);
+	animation: imgxd1 4s ease-in-out infinite alternate;
+}
+
+.what{
+	transform: scale(0.8);
+	left: 13.5%;
+	top: 10%;
+	animation: what1 6s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+	.what{
+		top: -10%;
+		left: -26%;
+		transform: scale(.7);
+	}
+	
+}
+
+@keyframes imgxd1 {
+	0%{
+		transform: translate(-20%, -56%) rotate(-35deg);
+		opacity: 1;
+	}
+	23%{
+		opacity: .7;
+	}
+	29%{
+		opacity: .3;
+	}
+	40%{
+		opacity: 1;
+	}
+	50%{
+		transform: translate(-50%, -50%);
+		opacity: .7;
+	}
+	70%{
+		opacity: .3;
+	}
+	100% {
+		transform: translate(-80%, -60%) rotate(35deg);
+    }
+}
+
+@keyframes what1 {
+	0%{
+		opacity: 1;
+	}
+	23%{
+		opacity: .7;
+	}
+	29%{
+		opacity: .2;
+	}
+	40%{
+		opacity: .91;
+	}
+	50%{
+		opacity: .6;
+	}
+	70%{
+		opacity: .3;
+	}
+	80%{
+		opacity: .7;
+	}
+	90%{
+		opacity: .2;
+	}
+	100% {
+		opacity: .8;
+    }
+}
+.bbt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 4rem;
+  width: 10rem;
+  font-size: 1.2rem;
+  border-color: #ff0154;;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: Barkentina;
+  font-weight: 700;
+  color: #ffeb00;
+  background-color: #33aebb;
+}
+.bbt:hover,
+.bbt:focus,
+.bbt:active,
+.bbt.active,
+.open .dropdown-toggle.bbt {
+        border-color: #fff;
+        color: #fff;
+        background-color: #466baf;
+}
+
+</style>
+
+</head>
+
+<body onload="lo();">
+	<audio class="song" loop autoplay ><source src="music/sssssh.mp3"></source></audio>
+	<button class="bbt" id="run">i dare u to CLICK Me</button>
+
+</body>
+</html>
