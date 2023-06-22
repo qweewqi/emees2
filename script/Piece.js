@@ -63,7 +63,7 @@
             minFrame = Math.min(minFrame, f);
         }
         if (minFrame > 0) {
-            if (this.counter > 999){
+            if (this.counter > 400){
             //if (this.counter > 9){
                 if (!this.done){
                     //console.log("STOP!!!!");
