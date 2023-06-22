@@ -93,6 +93,7 @@
             if (idx == n - 1) {
                 this.counter--;
                 console.log(this.counter);
+                document.title = `YES hAhA d0 iT! ${this.counter}`;
                 if (this.counter < 10 && this.done){
                     //console.log("STOPDELL!!!!");
                     this.done = false;
@@ -160,6 +161,7 @@
         if (append) {
             this.counter++;
             console.log(this.counter);
+            document.title = `U cAN't d0 iT! ${this.counter}`;
             this.doors.push(dr);
             dr.gotoFrame(0, true);
             var len = this.doors.length;
